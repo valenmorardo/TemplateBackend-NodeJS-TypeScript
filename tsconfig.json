@@ -81,6 +81,13 @@
     // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
 
+    "baseUrl": ".",
+    "paths": {
+      "@routes/*": ["./src/routes/*"],
+
+    },
+    "typeRoots": ["./node_modules/@types", "./src/@types"],
+
     /* Type Checking */
     // "strict": true,                                      /* Enable all strict type-checking options. */
     // "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */
@@ -105,5 +112,8 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+    
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
