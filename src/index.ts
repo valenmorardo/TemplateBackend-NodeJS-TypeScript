@@ -15,7 +15,6 @@ import express from "express";
 import indexRoute from '@routes/index.routes'
 
 
-
 const app = express();
 
 app.get("/", (req, res) => {
