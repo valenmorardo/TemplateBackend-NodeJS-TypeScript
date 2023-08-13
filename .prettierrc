@@ -1,11 +1,9 @@
 {
 	"useTabs": true,
-    "tabWidth": 2,
 	"semicolons": true,
 	"singleQuote": true,
 	"arrowParens": "always",
 	"bracketSpacing": true,
 	"trailingComma": "all",
-    "semi": true,
 	"endOfLine": "lf"
 }
