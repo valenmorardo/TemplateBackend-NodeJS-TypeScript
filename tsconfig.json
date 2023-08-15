@@ -85,7 +85,8 @@
 		"paths": {
 			"@routes/*": ["./src/routes/*"],
 			"@controllers/*": ["./src/controllers/*"],
-			"@config/*": ["./src/config/*"]
+			"@config/*": ["./src/config/*"],
+			"@controllers/": ["./src/controllers/"]
 		},
 		"typeRoots": ["./node_modules/@types", "./src/@types"],
 

@@ -1,4 +1,4 @@
-import Database from '@config/database'
+import Database from '@config/database';
 
 const connectDB = () => {
 	return new Promise<void>((resolve, reject) => {

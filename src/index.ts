@@ -9,8 +9,8 @@
 //		▄███████▄.▲.▲▲▲▲▲▲▲▲
 //		████████████████████▀▀
 
-import startServer from "@config/functions/startServer";
-import connectDB from "@config/functions/connect-DB";
+import startServer from '@config/functions/startServer';
+import connectDB from '@config/functions/connect-DB';
 
 const runApp = async () => {
 	try {
@@ -20,7 +20,7 @@ const runApp = async () => {
 		console.log('ERROR!!');
 		throw new Error(err);
 	}
-	
+
 	return true;
 };
 runApp();
