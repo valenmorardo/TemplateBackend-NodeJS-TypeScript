@@ -1,11 +1,9 @@
-import sequelize from '../database'
-
-const Database = sequelize
+import Database from '@config/database'
 
 const connectDB = () => {
 	return new Promise<void>((resolve, reject) => {
 		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		Database.sync({ force: false }) // example PostgreSQL
+		Database.sync({ force: false })
 			.then(() => {
 				console.log('Base de datos - Conectada con éxito! :D');
 				resolve();

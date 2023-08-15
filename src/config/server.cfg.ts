@@ -1,5 +1,5 @@
-import bodyParser from "body-parser";
-import cookieParser from "cookie-parser";
+import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
 import express from 'express';
 
 const server = express();
@@ -31,7 +31,10 @@ server.use((req, res, next) => {
 });
 
 
-/* const allRoutes = require('../Routes/routes.js');
-server.use('/', allRoutes); */
+
+import router from '@routes/index.routes';
+const allRoutes = router;
+
+server.use('/', allRoutes);
 
 export default server;
