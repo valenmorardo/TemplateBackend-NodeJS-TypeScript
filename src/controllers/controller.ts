@@ -1,33 +1,24 @@
-import axios from "axios";
-import { Request, Response, NextFunction } from 'express';
-
-
+import axios from 'axios';
+import { Request, Response } from 'express';
 
 ///////////////////////////////////////
-async function getX(req: Request, res: Response, _next) {}
+async function getX(req: Request, res: Response) {}
 ///////////////////////////////////////
 
 // /////////////////////////////////////
-async function postX(req: Request, res: Response, _next) {}
+async function postX(req: Request, res: Response) {}
 // /////////////////////////////////////
 
 ///////////////////////////////////////
-async function putX(req: Request, res: Response, _next) {}
+async function putX(req: Request, res: Response) {}
 ///////////////////////////////////////
 
 ///////////////////////////////////////
-async function deleteX(req: Request, res: Response, _next) {}
+async function deleteX(req: Request, res: Response) {}
 ///////////////////////////////////////
 
 ///////////////////////////////////////
-async function patchX(req: Request, res: Response, _next) {}
+async function patchX(req: Request, res: Response) {}
 ///////////////////////////////////////
 
-export {
-    getX,
-    postX,
-    putX,
-    deleteX,
-    patchX
-
-}
+export { getX, postX, putX, deleteX, patchX };
