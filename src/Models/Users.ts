@@ -1,12 +1,7 @@
 import { DataTypes, Model } from 'sequelize';
 import Database from '@config/database';
 
-interface ProjectAttributes {
-	id: number;
-	name: string;
-	description: string;
-}
-
+import { ProjectAttributes } from 'src/services/Types_&_Interfaces';
 
 const Project = Database.define<Model, ProjectAttributes>(
 	'projects',
