@@ -12,7 +12,7 @@
 import startServer from '@config/functions/startServer';
 import connectDB from '@config/functions/connect-DB';
 
-const runApp = async () => {
+const runApp = async (): Promise<boolean> => {
 	try {
 		await startServer();
 		await connectDB();
