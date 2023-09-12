@@ -87,7 +87,6 @@
 			"@controllers/*": ["./src/controllers/*"],
 			"@config/*": ["./src/config/*"],
 			"@models/*": ["./src/models/*"],
-			"@services/*": [".src/services/*"]
 		},
 		"typeRoots": ["./node_modules/@types", "./src/@types"],
 
