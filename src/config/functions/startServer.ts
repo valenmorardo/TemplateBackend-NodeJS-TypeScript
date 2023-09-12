@@ -1,11 +1,10 @@
-import env from '@config/var-environments';
 import server from '@config/server.cfg';
 
 const startServer = () => {
 	return new Promise<void>((resolve, reject) => {
 		try {
-			server.listen(env.PORT || 3001, () => {
-				console.log(`Servidor corriendo en el puerto: ${env.PORT}`);
+			server.listen(server.get('port'), () => {
+				console.log(`Servidor corriendo en el puerto: ${server.get('port')}`);
 				resolve();
 			});
 		} catch (error) {
