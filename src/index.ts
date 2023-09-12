@@ -18,7 +18,12 @@ const runApp = async (): Promise<boolean> => {
 		await connectDB();
 	} catch (err) {
 		console.log('ERROR!!');
-		throw new Error(err);
+		if (typeof err === 'string') {
+			throw new Error(err);
+		} else {
+			console.log(err);
+			throw new Error('An unknown error occurred');
+		}
 	}
 
 	return true;
