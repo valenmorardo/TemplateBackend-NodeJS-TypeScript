@@ -19,7 +19,6 @@ module.exports = {
 					'@controllers': './src/controllers',
 					'@routes': './src/routes',
 					'@models': './src/models/',
-					'@services': '.src/services/',
 				},
 			},
 		],
